@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rigup-adminer
+  namespace: fpro
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rigupapp
+  template:
+    metadata:
+      labels:
+        app: rigupapp
+    spec:
+      containers:
+      - name: rigup-cont-adminer
+        image: adminer
+        ports:
+        - containerPort: 8080

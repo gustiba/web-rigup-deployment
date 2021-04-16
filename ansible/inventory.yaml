@@ -1,0 +1,1 @@
+jenkins ansible_host=104.155.197.232 ansible_user=gustiba ansible_ssh_private_key_file=ssh-gustiba.pem

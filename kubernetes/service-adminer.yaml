@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rigup-svc-adminer
+  namespace: fpro
+  labels:
+    app: rigupapp
+    type: dbtools
+spec:
+  type: NodePort
+  selector:
+    type: dbtools
+  ports:
+  - port: 8080
+    targetPort: 8080
+    NodePort: 30031

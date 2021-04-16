@@ -1,0 +1,8 @@
+/ansible/ssh-gustiba.pem
+/ansible/ssh-gustiba.ppk
+
+/terraform/.terraform
+/terraform/.terraform.lock.hcl
+/terraform/test-cicd-306003-2.json
+test-cicd-306003-2.json:Zone.Identifier
+/terraform/test-cicd-credential.json

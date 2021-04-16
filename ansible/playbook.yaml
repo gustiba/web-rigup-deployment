@@ -1,0 +1,15 @@
+- name: Install jenkins configuration
+  hosts: jenkins
+  become: yes
+  ignore_unreachable: yes
+
+  vars:
+    java_packages:
+      - openjdk-8-jdk
+
+  roles:
+    - role: geerlingguy.java
+    - role: geerlingguy.jenkins    
+    - role: geerlingguy.pip
+    - role: geerlingguy.docker
+    - role: geerlingguy.nodejs
